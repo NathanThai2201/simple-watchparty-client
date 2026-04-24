@@ -74,7 +74,7 @@ export default function VideoPlayer() {
   }, []);
 
   const sendEvent = (action: string) => {
-    if (isSyncing.current) return; // 🚨 THIS FIXES THE LOOP
+    if (isSyncing.current) return; 
 
     const video = videoRef.current;
     if (!video) return;
@@ -95,7 +95,7 @@ export default function VideoPlayer() {
       onPause={() => sendEvent("pause")}
       onSeeked={() => sendEvent("seek")}
     >
-      <source src="/movie.mp4" type="video/mp4" />
+      <source src="/video.mp4" type="video/mp4" />
     </video>
   );
 }
