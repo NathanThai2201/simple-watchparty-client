@@ -49,3 +49,5 @@ export default tseslint.config({
 })
 ```
 # simple-watchparty-client
+# simple-watchparty-client
+# simple-watchparty-client
