@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# AI generated for windows, testing soon.
 set -e
 
 # Check Node.js
