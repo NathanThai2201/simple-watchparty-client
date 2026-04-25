@@ -89,7 +89,7 @@ export default function VideoPlayer() {
   return (
     <video
       ref={videoRef}
-      width="600"
+      style={{ width: "100%", maxWidth: "100%" }}
       controls
       onPlay={() => sendEvent("play")}
       onPause={() => sendEvent("pause")}
