@@ -2,6 +2,8 @@
 
 set -e
 
+FILE_ID=$1
+
 # homebrew
 if ! command -v brew &> /dev/null
 then
@@ -24,7 +26,7 @@ fi
 pip3 install --upgrade gdown
 rm -rf public
 mkdir -p public
-gdown https://drive.google.com/uc?id=1v1ynEmgKeiQX1gsHYwMf1bhJoFTgvYeZ -O public/video.mp4
+gdown https://drive.google.com/uc?id=${FILE_ID} -O public/video.mp4
 # example
 # https://drive.google.com/file/d/1v1ynEmgKeiQX1gsHYwMf1bhJoFTgvYeZ/view?usp=sharing
 # here the id is 1v1ynEmgKeiQX1gsHYwMf1bhJoFTgvYeZ
